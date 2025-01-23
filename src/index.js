@@ -8,6 +8,12 @@ const rl = readline.createInterface({
 rl.question("Digite o XP do herói: ", (inputXp) => {
     let xp = parseInt(inputXp);
 
+    if (isNaN(xp)) {
+        console.log("Por favor, digite um número válido para o XP.");
+        rl.close();
+        return;
+    }
+
 let nomeHeroi = "Naruto"
 let nivel
 
