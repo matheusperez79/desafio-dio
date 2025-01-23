@@ -1,4 +1,13 @@
-let xp = 8500
+const readline = require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question("Digite o XP do herói: ", (inputXp) => {
+    let xp = parseInt(inputXp);
+
 let nomeHeroi = "Naruto"
 let nivel
 
@@ -21,3 +30,5 @@ if (xp < 1000) {
 }
 
 console.log("O Herói de nome " + nomeHeroi + " está no nível de " + nivel)
+rl.close();
+});
