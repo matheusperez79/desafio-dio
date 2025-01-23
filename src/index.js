@@ -1,4 +1,4 @@
-let xp = 2500
+let xp = 8500
 let nomeHeroi = "Naruto"
 let nivel
 
